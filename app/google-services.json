@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028883801110",
+    "project_id": "leavemanagerapp-cb899",
+    "storage_bucket": "leavemanagerapp-cb899.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028883801110:android:3c9752e4c1e763a82dc137",
+        "android_client_info": {
+          "package_name": "com.example.leavemanagerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcQwdj0tVuIeL_cKFb1T1pYFi53EHSm28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

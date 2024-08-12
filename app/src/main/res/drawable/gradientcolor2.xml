@@ -1,0 +1,17 @@
+<!-- res/drawable/gradient_border.xml -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Gradient -->
+    <item>
+        <shape>
+            <gradient        android:startColor = "#9C6C1B"
+                android:centerColor = "#A56F14"
+                android:endColor = "#C68D2C"
+                android:angle = "360"
+                android:type = "linear" />
+        </shape>
+    </item>
+
+
+</layer-list>

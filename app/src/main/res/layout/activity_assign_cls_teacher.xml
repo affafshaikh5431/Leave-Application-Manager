@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    tools:context=".Admin.AssignClsTeacher">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="285dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:background="@color/gradient"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="200dp" >
+
+        <LinearLayout
+            android:background="@drawable/gradientcolor1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class Teachers :" />
+
+            <ListView
+                android:id='@+id/lst'
+                android:dividerHeight="0dp"
+                android:divider="@null"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="285dp"
+        android:layout_gravity="center_horizontal"
+        app:cardElevation="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="20dp"
+        android:layout_height="330dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:gravity='center'
+            android:background="@color/gradient"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assign Class Teachers" />
+
+            <TextView
+                android:id="@+id/lblRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="6dp"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Choose Class" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="55dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                android:layout_height="42dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gradient"
+                    android:textColor="@color/white"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/chooseclsspinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"/>
+
+                    <TextView
+                        android:id="@+id/txtClass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="6dp"
+                android:layout_gravity="left"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Choose Faculty" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="6dp"
+                android:layout_height="42dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gradient"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/choosenamespinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"/>
+
+                    <TextView
+                        android:id="@+id/txtstaff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/assignBtn"
+                android:layout_width="220dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_border"
+                app:backgroundTint="#08406C"
+
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/white"
+                android:text="Assign" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
